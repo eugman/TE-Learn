@@ -1,0 +1,17 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Exercise cache files (per-exercise .gitignore also excludes these)
+**/cache.abf
+**/localSettings.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+*.swp

@@ -10,4 +10,4 @@ Build a personal library of reusable scripts and macros to automate your most co
 
 ## Enabling Objectives
 
-- [Working Faster with C# Macros](working-faster-csharp-macros.md)
+- [Working Faster with Advanced Hotkeys and Macros](working-faster-advanced-hotkeys-macros.md)

@@ -10,4 +10,5 @@ Answer questions about a model in minutes, not hours.
 
 ## Enabling Objectives
 
-- [Working Faster with Tabular Editor Hotkeys](working-faster-te-hotkeys.md)
+- [Working Faster with Intro Hotkeys](working-faster-te-hotkeys.md)
+- [Saving Time and Avoiding Mistakes with Metadata-only Editing](metadata-only-editing.md)

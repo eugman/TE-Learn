@@ -1,9 +1,9 @@
 ---
 uid: validating-business-logic-pivot-grid
-title: Validating Business Logic with the Pivot Grid and DAX Debugger
+title: Validating Business Logic with Pivot Grid, DAX Queries, and DAX Debugger
 eo_id: DAX-E07
 to_id: DAX-T02
-blooms_level: Apply
+blooms_level: Analyze
 edition_minimum: te3_desktop
 prerequisites:
   - understanding-dax-debugger
@@ -12,7 +12,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Validating Business Logic with the Pivot Grid and DAX Debugger
+# Validating Business Logic with Pivot Grid, DAX Queries, and DAX Debugger
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 

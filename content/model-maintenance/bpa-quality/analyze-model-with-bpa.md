@@ -1,6 +1,6 @@
 ---
 uid: analyze-model-with-bpa
-title: Analyze your Model with BPA
+title: Analyzing Your Model with Best Practice Analyzer
 eo_id: MAINT-E01
 to_id: MAINT-T01
 blooms_level: Analyze
@@ -11,7 +11,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Analyze your Model with BPA
+# Analyzing Your Model with Best Practice Analyzer
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 

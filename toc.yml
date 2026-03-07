@@ -3,20 +3,29 @@
 # Only groups/TOs/EOs with initial learning path content are listed.
 # Add entries as new content is created.
 
+- name: Getting Started
+  href: content/getting-started/
+  items:
+    - name: Exploring Models
+      href: content/getting-started/exploring-models/
+      items:
+        - name: Working Faster with Intro Hotkeys
+          uid: working-faster-te-hotkeys
+        - name: Saving Time and Avoiding Mistakes with Metadata-only Editing
+          uid: metadata-only-editing
+
 - name: DAX Authoring
   href: content/dax-authoring/
   items:
     - name: Authoring and Refactoring DAX Measures
       href: content/dax-authoring/dax-measures/
       items:
-        - name: Navigate Complex DAX with Peek, Go to, and Inline Definition
+        - name: Navigating Complex DAX with Peek, Go To, and Inline Definition
           uid: navigate-complex-dax-peek-goto
-        - name: Save Time with Metadata-only Editing
-          uid: metadata-only-editing
     - name: Validating DAX Changes
       href: content/dax-authoring/dax-validation/
       items:
-        - name: Validating Business Logic with the Pivot Grid and DAX Debugger
+        - name: Validating Business Logic with Pivot Grid, DAX Queries, and DAX Debugger
           uid: validating-business-logic-pivot-grid
     - name: Debugging Unexpected DAX Results
       href: content/dax-authoring/dax-debugging/
@@ -32,11 +41,11 @@
     - name: Identifying Model Quality Issues with BPA
       href: content/model-maintenance/bpa-quality/
       items:
-        - name: Analyze your Model with BPA
+        - name: Analyzing Your Model with Best Practice Analyzer
           uid: analyze-model-with-bpa
-        - name: Apply Quick Fixes with Code Actions and BPA
+        - name: Applying Quick Fixes with Code Actions and BPA
           uid: apply-quick-fixes-code-actions
-        - name: Apply Bulk Fixes with BPA and C# Scripts
+        - name: Applying Bulk Fixes with BPA and C# Scripts
           uid: apply-bulk-fixes-bpa-scripts
 
 - name: Scripting and Automation
@@ -45,14 +54,5 @@
     - name: Scripts and Macros
       href: content/scripting-automation/scripts-macros/
       items:
-        - name: Working Faster with C# Macros
-          uid: working-faster-csharp-macros
-
-- name: Getting Started
-  href: content/getting-started/
-  items:
-    - name: Exploring Models
-      href: content/getting-started/exploring-models/
-      items:
-        - name: Working Faster with Tabular Editor Hotkeys
-          uid: working-faster-te-hotkeys
+        - name: Working Faster with Advanced Hotkeys and Macros
+          uid: working-faster-advanced-hotkeys-macros

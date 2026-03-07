@@ -1,6 +1,6 @@
 ---
 uid: apply-bulk-fixes-bpa-scripts
-title: Apply Bulk Fixes with BPA and C# Scripts
+title: Applying Bulk Fixes with BPA and C# Scripts
 eo_id: MAINT-E02b
 to_id: MAINT-T01
 blooms_level: Apply
@@ -12,7 +12,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Apply Bulk Fixes with BPA and C# Scripts
+# Applying Bulk Fixes with BPA and C# Scripts
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 

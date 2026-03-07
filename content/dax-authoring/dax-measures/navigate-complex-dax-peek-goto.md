@@ -1,6 +1,6 @@
 ---
 uid: navigate-complex-dax-peek-goto
-title: Navigate Complex DAX with Peek, Go to, and Inline Definition
+title: Navigating Complex DAX with Peek, Go To, and Inline Definition
 eo_id: DAX-E01
 to_id: DAX-T01
 blooms_level: Apply
@@ -11,7 +11,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Navigate Complex DAX with Peek, Go to, and Inline Definition
+# Navigating Complex DAX with Peek, Go To, and Inline Definition
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 
@@ -46,4 +46,4 @@ Tabular Editor 3's DAX editor includes VS Code-style code navigation features â€
 
 ## Next Steps
 
-- [Save Time with Metadata-only Editing](metadata-only-editing.md)
+- [Working Faster with Intro Hotkeys](../../getting-started/exploring-models/working-faster-te-hotkeys.md)

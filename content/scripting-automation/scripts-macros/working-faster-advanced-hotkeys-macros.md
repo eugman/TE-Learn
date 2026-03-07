@@ -1,6 +1,6 @@
 ---
-uid: working-faster-csharp-macros
-title: Working Faster with C# Macros
+uid: working-faster-advanced-hotkeys-macros
+title: Working Faster with Advanced Hotkeys and Macros
 eo_id: SCRIPT-E06
 to_id: SCRIPT-T02
 blooms_level: Apply
@@ -12,7 +12,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Working Faster with C# Macros
+# Working Faster with Advanced Hotkeys and Macros
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 

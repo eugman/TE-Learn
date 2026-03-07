@@ -1,6 +1,6 @@
 ---
 uid: working-faster-te-hotkeys
-title: Working Faster with Tabular Editor Hotkeys
+title: Working Faster with Intro Hotkeys
 eo_id: INTRO-E06b
 to_id: INTRO-T02
 blooms_level: Apply
@@ -11,7 +11,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Working Faster with Tabular Editor Hotkeys
+# Working Faster with Intro Hotkeys
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 
@@ -48,4 +48,4 @@ Learn the essential keyboard shortcuts that eliminate the most common mouse inte
 
 ## Next Steps
 
-- Explore the full [keyboard shortcuts reference](https://docs.tabulareditor.com/references/shortcuts3.html)
+- [Saving Time and Avoiding Mistakes with Metadata-only Editing](metadata-only-editing.md)

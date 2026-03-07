@@ -10,5 +10,4 @@ Author and refactor DAX measures without breaking downstream dependencies.
 
 ## Enabling Objectives
 
-- [Navigate Complex DAX with Peek, Go to, and Inline Definition](navigate-complex-dax-peek-goto.md)
-- [Save Time with Metadata-only Editing](metadata-only-editing.md)
+- [Navigating Complex DAX with Peek, Go To, and Inline Definition](navigate-complex-dax-peek-goto.md)

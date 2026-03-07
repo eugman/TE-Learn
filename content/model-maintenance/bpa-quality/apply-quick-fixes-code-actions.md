@@ -1,6 +1,6 @@
 ---
 uid: apply-quick-fixes-code-actions
-title: Apply Quick Fixes with Code Actions and BPA
+title: Applying Quick Fixes with Code Actions and BPA
 eo_id: MAINT-E02
 to_id: MAINT-T01
 blooms_level: Apply
@@ -12,7 +12,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Apply Quick Fixes with Code Actions and BPA
+# Applying Quick Fixes with Code Actions and BPA
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 

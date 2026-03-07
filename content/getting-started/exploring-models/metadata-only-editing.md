@@ -1,8 +1,8 @@
 ---
 uid: metadata-only-editing
-title: Save Time and Avoid Mistakes with Metadata-only Editing
-eo_id: DAX-E01b
-to_id: DAX-T01
+title: Saving Time and Avoiding Mistakes with Metadata-only Editing
+eo_id: TBD
+to_id: INTRO-T02
 blooms_level: Understand
 edition_minimum: te3_desktop
 prerequisites: []
@@ -11,7 +11,7 @@ author: emeidinger
 updated: 2026-03-07
 exercise:
 ---
-# Save Time and Avoid Mistakes with Metadata-only Editing
+# Saving Time and Avoiding Mistakes with Metadata-only Editing
 
 > **Time to learn**: ~15 minutes | **Time saved**: 5-15 minutes per week
 
@@ -46,4 +46,4 @@ Tabular Editor works with model metadata directly. It doesn't validate the entir
 
 ## Next Steps
 
-- [Analyze your Model with BPA](../../model-maintenance/bpa-quality/analyze-model-with-bpa.md)
+- [Analyzing Your Model with Best Practice Analyzer](../../model-maintenance/bpa-quality/analyze-model-with-bpa.md)

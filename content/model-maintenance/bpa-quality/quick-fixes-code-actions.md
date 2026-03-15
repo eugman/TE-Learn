@@ -1,5 +1,6 @@
 ---
-uid: apply-quick-fixes-code-actions
+uid: quick-fixes-code-actions
+order: 2
 title: Applying Quick Fixes with Code Actions and BPA
 eo_id: MAINT-E02
 to_id: MAINT-T01
@@ -47,4 +48,4 @@ Many BPA rules have auto-fix actions built in. Code Actions (the lightbulb menu)
 
 ## Next Steps
 
-- [Apply Bulk Fixes with BPA and C# Scripts](apply-bulk-fixes-bpa-scripts.md)
+- [Applying Bulk Fixes with BPA and C# Scripts](bulk-fixes-bpa.md)

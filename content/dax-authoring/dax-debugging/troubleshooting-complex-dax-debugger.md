@@ -1,5 +1,6 @@
 ---
 uid: troubleshooting-complex-dax-debugger
+order: 2
 title: Troubleshooting Complex DAX with the DAX Debugger
 eo_id: DAX-E09
 to_id: DAX-T03
@@ -47,4 +48,4 @@ Use the DAX Debugger to trace filter context propagation through a chain of meas
 
 ## Next Steps
 
-- [Validating Business Logic with the Pivot Grid and DAX Debugger](../dax-validation/validating-business-logic-pivot-grid.md)
+- [Validating Business Logic with the Pivot Grid and DAX Debugger](../dax-validation/validate-pivot-grid.md)

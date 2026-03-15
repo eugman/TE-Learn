@@ -1,12 +1,13 @@
 ---
-uid: working-faster-advanced-hotkeys-macros
+uid: advanced-hotkeys-macros
+order: 1
 title: Working Faster with Advanced Hotkeys and Macros
 eo_id: SCRIPT-E06
 to_id: SCRIPT-T02
 blooms_level: Apply
 edition_minimum: te3_desktop
 prerequisites:
-  - apply-bulk-fixes-bpa-scripts
+  - bulk-fixes-bpa
 status: draft
 author: emeidinger
 updated: 2026-03-07

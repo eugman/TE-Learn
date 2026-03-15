@@ -1,12 +1,13 @@
 ---
-uid: apply-bulk-fixes-bpa-scripts
+uid: bulk-fixes-bpa
+order: 3
 title: Applying Bulk Fixes with BPA and C# Scripts
 eo_id: MAINT-E02b
 to_id: MAINT-T01
 blooms_level: Apply
 edition_minimum: te3_desktop
 prerequisites:
-  - apply-quick-fixes-code-actions
+  - quick-fixes-code-actions
 status: draft
 author: emeidinger
 updated: 2026-03-07

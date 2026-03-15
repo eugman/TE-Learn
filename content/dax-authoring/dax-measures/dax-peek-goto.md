@@ -1,5 +1,6 @@
 ---
-uid: navigate-complex-dax-peek-goto
+uid: dax-peek-goto
+order: 1
 title: Navigating Complex DAX with Peek, Go To, and Inline Definition
 eo_id: DAX-E01
 to_id: DAX-T01

@@ -1,5 +1,6 @@
 ---
 uid: working-faster-te-hotkeys
+order: 1
 title: Working Faster with Intro Hotkeys
 eo_id: INTRO-E06b
 to_id: INTRO-T02

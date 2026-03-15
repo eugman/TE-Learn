@@ -1,5 +1,6 @@
 ---
 uid: analyze-model-with-bpa
+order: 1
 title: Analyzing Your Model with Best Practice Analyzer
 eo_id: MAINT-E01
 to_id: MAINT-T01
@@ -46,4 +47,4 @@ The Best Practice Analyzer (BPA) scans your entire model against a set of rules 
 
 ## Next Steps
 
-- [Apply Quick Fixes with Code Actions and BPA](apply-quick-fixes-code-actions.md)
+- [Apply Quick Fixes with Code Actions and BPA](quick-fixes-code-actions.md)

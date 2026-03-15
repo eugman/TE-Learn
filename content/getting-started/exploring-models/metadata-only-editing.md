@@ -1,5 +1,6 @@
 ---
 uid: metadata-only-editing
+order: 2
 title: Saving Time and Avoiding Mistakes with Metadata-only Editing
 eo_id: TBD
 to_id: INTRO-T02

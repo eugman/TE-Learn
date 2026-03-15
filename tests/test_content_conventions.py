@@ -13,7 +13,8 @@ CONTENT_DIR = Path(__file__).parent.parent / "content"
 VALID_STATUSES = {"draft", "review", "published"}
 VALID_BLOOMS = {"Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"}
 VALID_EDITIONS = {"te3_desktop", "te3_business", "te3_enterprise"}
-MAX_SLUG_WORDS = 2
+MAX_FOLDER_SLUG_WORDS = 2
+MAX_FILE_SLUG_WORDS = 4
 
 
 def _all_content_dirs() -> list[Path]:
@@ -54,9 +55,18 @@ class TestSlugConventions:
     def test_folder_slug_max_two_words(self, directory: Path) -> None:
         slug = directory.name
         word_count = len(slug.split("-"))
-        assert word_count <= MAX_SLUG_WORDS, (
-            f"Folder slug '{slug}' has {word_count} words (max {MAX_SLUG_WORDS}). "
+        assert word_count <= MAX_FOLDER_SLUG_WORDS, (
+            f"Folder slug '{slug}' has {word_count} words (max {MAX_FOLDER_SLUG_WORDS}). "
             f"Path: {directory.relative_to(CONTENT_DIR)}"
+        )
+
+    @pytest.mark.parametrize("eo_file", _all_eo_files(), ids=lambda f: f.stem)
+    def test_file_slug_max_four_words(self, eo_file: Path) -> None:
+        slug = eo_file.stem
+        word_count = len(slug.split("-"))
+        assert word_count <= MAX_FILE_SLUG_WORDS, (
+            f"File slug '{slug}' has {word_count} words (max {MAX_FILE_SLUG_WORDS}). "
+            f"Path: {eo_file.relative_to(CONTENT_DIR)}"
         )
 
     @pytest.mark.parametrize("eo_file", _all_eo_files(), ids=lambda f: f.stem)

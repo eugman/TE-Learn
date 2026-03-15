@@ -1,12 +1,13 @@
 ---
 uid: understanding-dax-debugger
+order: 1
 title: Understanding the DAX Debugger
 eo_id: DAX-E08
 to_id: DAX-T03
 blooms_level: Understand
 edition_minimum: te3_desktop
 prerequisites:
-  - navigate-complex-dax-peek-goto
+  - dax-peek-goto
 status: draft
 author: emeidinger
 updated: 2026-03-07

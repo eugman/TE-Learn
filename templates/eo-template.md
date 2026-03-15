@@ -3,6 +3,7 @@ uid: your-eo-slug-here
 title: Your EO Title Here
 eo_id: GROUP-Enn
 to_id: GROUP-Tnn
+order: 1
 blooms_level: Apply
 edition_minimum: te3_desktop
 prerequisites: []

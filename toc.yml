@@ -4,10 +4,10 @@
 # Add entries as new content is created.
 
 - name: Getting Started
-  href: content/getting-started/
+  href: getting-started/
   items:
     - name: Exploring Models
-      href: content/getting-started/exploring-models/
+      href: getting-started/exploring-models/
       items:
         - name: Working Faster with Intro Hotkeys
           uid: working-faster-te-hotkeys
@@ -15,20 +15,20 @@
           uid: metadata-only-editing
 
 - name: DAX Authoring
-  href: content/dax-authoring/
+  href: dax-authoring/
   items:
     - name: Authoring and Refactoring DAX Measures
-      href: content/dax-authoring/dax-measures/
+      href: dax-authoring/dax-measures/
       items:
         - name: Navigating Complex DAX with Peek, Go To, and Inline Definition
-          uid: navigate-complex-dax-peek-goto
+          uid: dax-peek-goto
     - name: Validating DAX Changes
-      href: content/dax-authoring/dax-validation/
+      href: dax-authoring/dax-validation/
       items:
         - name: Validating Business Logic with Pivot Grid, DAX Queries, and DAX Debugger
-          uid: validating-business-logic-pivot-grid
+          uid: validate-pivot-grid
     - name: Debugging Unexpected DAX Results
-      href: content/dax-authoring/dax-debugging/
+      href: dax-authoring/dax-debugging/
       items:
         - name: Understanding the DAX Debugger
           uid: understanding-dax-debugger
@@ -36,23 +36,23 @@
           uid: troubleshooting-complex-dax-debugger
 
 - name: Model Maintenance
-  href: content/model-maintenance/
+  href: model-maintenance/
   items:
     - name: Identifying Model Quality Issues with BPA
-      href: content/model-maintenance/bpa-quality/
+      href: model-maintenance/bpa-quality/
       items:
         - name: Analyzing Your Model with Best Practice Analyzer
           uid: analyze-model-with-bpa
         - name: Applying Quick Fixes with Code Actions and BPA
-          uid: apply-quick-fixes-code-actions
+          uid: quick-fixes-code-actions
         - name: Applying Bulk Fixes with BPA and C# Scripts
-          uid: apply-bulk-fixes-bpa-scripts
+          uid: bulk-fixes-bpa
 
 - name: Scripting and Automation
-  href: content/scripting-automation/
+  href: scripting-automation/
   items:
     - name: Scripts and Macros
-      href: content/scripting-automation/scripts-macros/
+      href: scripting-automation/scripts-macros/
       items:
         - name: Working Faster with Advanced Hotkeys and Macros
-          uid: working-faster-advanced-hotkeys-macros
+          uid: advanced-hotkeys-macros

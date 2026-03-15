@@ -1,7 +1,9 @@
 """Tests that enforce TE-Learn content conventions.
 
-These tests scan the content/ directory and validate that all markdown files
-follow the agreed-upon conventions for slugs, frontmatter, and structure.
+These tests scan group directories at the repo root and validate that all
+markdown files follow the agreed-upon conventions for slugs, frontmatter,
+and structure.  Group directories are identified by containing an _index.md
+with a group_id field.
 """
 
 from pathlib import Path
@@ -9,7 +11,30 @@ from pathlib import Path
 import pytest
 import yaml
 
-CONTENT_DIR = Path(__file__).parent.parent / "content"
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+
+
+def _parse_fm(path: Path) -> dict:
+    """Parse YAML frontmatter (standalone helper for module-level use)."""
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        return {}
+    _, fm_text, _ = text.split("---", 2)
+    return yaml.safe_load(fm_text) or {}
+
+
+def _find_group_dirs() -> list[Path]:
+    """Return top-level group directories (those with _index.md containing group_id)."""
+    groups = []
+    for d in sorted(REPO_ROOT.iterdir()):
+        if not d.is_dir():
+            continue
+        index = d / "_index.md"
+        if index.exists():
+            fm = _parse_fm(index)
+            if "group_id" in fm:
+                groups.append(d)
+    return groups
 VALID_STATUSES = {"draft", "review", "published"}
 VALID_BLOOMS = {"Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"}
 VALID_EDITIONS = {"te3_desktop", "te3_business", "te3_enterprise"}
@@ -18,31 +43,36 @@ MAX_FILE_SLUG_WORDS = 4
 
 
 def _all_content_dirs() -> list[Path]:
-    """Return all directories under content/ (groups and TOs)."""
-    return [d for d in CONTENT_DIR.rglob("*") if d.is_dir() and d.name != "media"]
+    """Return all directories under group dirs (groups and TOs)."""
+    dirs = []
+    for g in _find_group_dirs():
+        dirs.append(g)
+        dirs.extend(d for d in g.rglob("*") if d.is_dir() and d.name != "media")
+    return dirs
 
 
 def _all_eo_files() -> list[Path]:
     """Return all EO markdown files (not _index.md)."""
-    return [
-        f
-        for f in CONTENT_DIR.rglob("*.md")
-        if f.name != "_index.md" and f.suffix == ".md"
-    ]
+    files = []
+    for g in _find_group_dirs():
+        files.extend(
+            f for f in g.rglob("*.md")
+            if f.name != "_index.md" and f.suffix == ".md"
+        )
+    return files
 
 
 def _all_index_files() -> list[Path]:
     """Return all _index.md files."""
-    return list(CONTENT_DIR.rglob("_index.md"))
+    files = []
+    for g in _find_group_dirs():
+        files.extend(g.rglob("_index.md"))
+    return files
 
 
 def _parse_frontmatter(path: Path) -> dict:
     """Parse YAML frontmatter from a markdown file."""
-    text = path.read_text(encoding="utf-8")
-    if not text.startswith("---"):
-        return {}
-    _, fm_text, _ = text.split("---", 2)
-    return yaml.safe_load(fm_text) or {}
+    return _parse_fm(path)
 
 
 # --- Slug conventions ---
@@ -142,14 +172,12 @@ class TestStructureConventions:
 
     def test_every_to_folder_has_media_dir(self) -> None:
         """TO folders (2 levels deep) should have a media/ directory."""
-        for group_dir in CONTENT_DIR.iterdir():
-            if not group_dir.is_dir():
-                continue
+        for group_dir in _find_group_dirs():
             for to_dir in group_dir.iterdir():
                 if not to_dir.is_dir():
                     continue
                 media_dir = to_dir / "media"
                 assert media_dir.exists(), (
-                    f"TO folder '{to_dir.relative_to(CONTENT_DIR)}' "
+                    f"TO folder '{to_dir.relative_to(REPO_ROOT)}' "
                     f"is missing a media/ directory"
                 )

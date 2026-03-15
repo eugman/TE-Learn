@@ -2,39 +2,44 @@
 
 Source content for Tabular Editor learning materials. Content is authored in Markdown and published to [EasyGenerator](https://www.easygenerator.com/) (primary) and HubSpot (secondary).
 
-## Structure
+## Content
+
+Content lives at the repo root — each top-level folder is a learning group:
 
 ```
-content/           Markdown learning content (Group → TO → EO)
-exercises/         PBIP and model.bim files for hands-on exercises
-templates/         Content templates for new EOs, TOs, and groups
-scripts/           Publishing automation (Playwright)
+getting-started/         Install, connect, and orient yourself
+dax-authoring/           Write, refactor, test, and debug DAX
+model-maintenance/       BPA, quality checks, optimization
+scripting-automation/    C# scripts and macros
 ```
 
-## Content Organization
-
-Content follows the Terminal Objectives (TO) framework from TE-dev-rel:
-
-- **Group** folders represent skill domains (e.g., `authoring-dax/`)
-- **TO** subfolders represent terminal objectives (e.g., `debugging-unexpected-dax-results/`)
-- **EO** files are individual enabling objectives — the atomic unit of content
-
-Each EO targets a "15 minutes to learn, save 5-15 minutes weekly" value proposition.
+Within each group: **Group → TO folder → EO file** (one markdown file per enabling objective).
 
 ## Authoring Workflow
 
-1. Create a new EO file from `templates/eo-template.md`
+1. Create a new EO file from `_build/templates/eo-template.md`
 2. Write content, add images to `media/` folder alongside the EO
 3. Set `status: review` when ready for feedback
-4. Publish to EasyGenerator via `scripts/publish_to_easygenerator.py`
+4. Publish to EasyGenerator via `python _build/scripts/publish_to_easygenerator.py`
 5. Set `status: published` after confirming in LMS
+
+## Tooling
+
+Build tooling lives in `_build/` — content editors can ignore it:
+
+```
+_build/
+  scripts/       Publishing automation (Playwright)
+  templates/     Content templates for new EOs
+  tests/         Content convention tests
+```
 
 ## Exercise Files
 
 Exercise models use PBIP format with TMDL (preferred) or model.bim:
 
-- `exercises/starter/` — starting-point models for learners
-- `exercises/solutions/` — completed exercise models
+- `exercises/starter/` — Starting-point models for learners
+- `exercises/solutions/` — Completed exercise models
 
 ## Quick Start
 
@@ -42,4 +47,10 @@ Exercise models use PBIP format with TMDL (preferred) or model.bim:
 # Install publishing dependencies
 pip install playwright markdown
 playwright install chromium
+
+# Generate TOC from frontmatter
+python _build/scripts/generate_toc.py --write
+
+# Run content convention tests
+python -m pytest _build/tests/
 ```
